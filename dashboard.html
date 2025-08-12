@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Resume Builder Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Welcome to the ATS Resume Builder Dashboard</h1>
+        </header>
+    </div>
+    <p style="background-image: url('C:\Users\madha\OneDrive\Desktop\MY PROJECTS\own website\ATS RESUME\static\baground.jpg');">background image</p>
+    <a href="https://www.atsresume.com" class="logo">
+        <img src="/static/logo.png" alt="ATS Resume Builder Logo"></a>
+    <nav>
+        <ul>
+            <li><a href="create_resume.html">Create Resume</a></li>
+            <li><a href="edit_resume.html">Edit Resume</a></li>
+            <li><a href="update_resume.html">Update Resume</a></li>
+            <li><a href="delete_resume.html">Delete Resume</a></li>
+            <li><a href="view_resumes.html">View Resumes</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="legal_notice.html">Legal Notice</a></li>
+            <li><a href="terms_of_service.html">Terms of Service</a></li>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="follow_us.html">Follow Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="upcoming_features.html">Upcoming Features</a></li>
+            <li><a href="recent_activity.html">Recent Activity</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Dashboard Overview</h2>
+            <p>Use the links above to navigate through the ATS Resume Builder features.</p>
+            <p>Manage your resumes efficiently with our ATS-friendly tools.</p>
+            <p>Get started by selecting an option from the menu above.</p>
+            <p>The ATS Resume Tracking System is designed to help users create resumes that are optimized for Applicant Tracking Systems. 
+            These systems are used by employers to filter and rank job applications based on specific criteria.
+            Our tool ensures your resume stands out and meets ATS requirements.
+            </p>
+        </section>
+        <section>
+            <h2>Recent Activity</h2>
+            <p>Check your recent resume submissions and updates.</p>
+            <!-- Placeholder for recent activity -->
+        </section>
+        <section>
+            <h2>Notifications</h2>
+            <p>Stay updated with the latest changes and features.</p>
+            <!-- Placeholder for notifications -->
+        </section>
+        <section>
+            <h2>Support</h2>
+            <p>If you need assistance, please contact our support team.</p>
+            <p>Email: <a href="mailto:support@atsresume.com">support@atsresume.com</a></p>
+            <p>Phone: +1 (555) 123-4567</p
+        </section>
+        <section>
+            <h2>Feedback</h2>
+            <p>We value your feedback! Let us know how we can improve.</p>
+            <form action="/submit_feedback" method="POST">
+                <textarea name="feedback" rows="4" cols="50" placeholder="Your feedback here..." required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+        <section>
+            <h2>Resources</h2>
+            <p>Explore our resources for tips on creating effective resumes.</p>
+            <ul>
+                <li><a href="https://www.atsresume.com/resources/tips">Resume Writing Tips</a></li>
+                <li><a href="https://www.atsresume.com/resources/examples">Resume Examples</a></li>
+                <li><a href="https://www.atsresume.com/resources/faq">FAQ</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Upcoming Features</h2>
+            <p>Stay tuned for new features coming soon!</p>
+            <!-- Placeholder for upcoming features -->
+    </section>
+        <section>
+            <h2>Community</h2>
+            <p>Join our community for discussions and networking.</p>
+            <ul>
+                <li><a href="https://www.atsresume.com/community/forum">Forum</a></li>
+                <li><a href="https://www.atsresume.com/community/groups">Groups</a></li>
+                <li><a href="https://www.atsresume.com/community/events">Events</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Privacy Policy</h2>
+            <p>Read our <a href="privacy_policy.html">Privacy Policy</a> to understand how we handle your data.</p>
+        </section>
+        <section>
+            <h2>Terms of Service</h2>
+            <p>Review our <a href="terms_of_service.html">Terms of Service</a> for using the ATS Resume Builder.</p>
+        </section>
+        <section>
+            <h2>Follow Us</h2>
+            <p>Stay connected with us on social media:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/atsresume">Facebook</a></li>
+                <li><a href="https://www.twitter.com/atsresume">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/company/atsresume">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <p>Check our <a href="faq.html">FAQ</a> for common questions and answers.</p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please reach out to us.</p>
+            <p>Email: <a href="mailto:support@atsresume.com">support@atsresume.com</a></p>
+        </section>
+        <section>
+            <h2>Legal</h2>
+            <p>Read our <a href="legal_notice.html">Legal Notice</a> for important information.</p>
+        </section>
+        <p>Visit our <a href="help.html">Help</a> page for more information.</p>
+        </section>
+        <footer>
+            <p>&copy; 2023 ATS Resume Builder. All rights reserved.</p>
+        </footer>
+        <section>
+            <h2>Return to Dashboard</h2>
+            <p><a href="dashboard.html">Click here to return to the dashboard</a></p>
+        </section>
+    </main>
+</body>
+</html>

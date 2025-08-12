@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Resume</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Your Resume</h1>
+    </header>
+    <main>
+        <form action="/update_resume" method="POST">
+            <label for="resume_id">Resume ID:</label>
+            <input type="text" id="resume_id" name="resume_id" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="resume">Upload Updated Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".doc,.docx,.pdf" required>
+
+            <button type="submit">Update Resume</button>
+        </form>
+    </main>
+</body>
+</html>
